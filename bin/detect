@@ -2,7 +2,7 @@
 # bin/detect <build-dir>
 
 if [ -f $1/*.jar ]; then
-  echo "Jar Fileadas" && exit 0
+  echo "Jar File" && exit 0
 else
-    echo "not found thiasdj"
+    echo "No Jar file found"
 fi
