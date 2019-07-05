@@ -95,8 +95,7 @@ install_jdk() {
   source /tmp/jvm-common/bin/util
   source /tmp/jvm-common/bin/java
   source /tmp/jvm-common/opt/jdbc.sh
-  mtime "jvm-common.install.time" "${start}"
+
 
   install_java_with_overlay "${install_dir}" "${cache_dir}"
-  mtime "jvm.install.time" "${start}"
-}
+
