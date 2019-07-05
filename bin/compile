@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+BP_DIR=$(cd $(dirname $0)/..; pwd) # absolute path
+BIN_DIR=$BP_DIR/bin
+OPT_DIR=$BP_DIR/opt
+LIB_DIR=$BP_DIR/lib
+
 echo "installing java JDK "
 source $LIB_DIR/common.sh
 install_jdk "${BUILD_DIR}" "${CACHE_DIR}"
+
