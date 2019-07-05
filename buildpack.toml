@@ -1,5 +1,5 @@
 [buildpack]
-name = "Gradle"
+name = "Jar File Buildpack"
 
   [publish.Ignore]
   files = [
