@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
-echo "no compiling needed :)"
+echo "installing java JDK "
+install_jdk "${BUILD_DIR}" "${CACHE_DIR}"
