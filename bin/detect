@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# bin/detect <build-dir>
+
+if [ -f $1/*.jar ]; then
+  echo "Jar file found" && exit 0
