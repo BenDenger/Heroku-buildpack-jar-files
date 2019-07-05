@@ -26,9 +26,9 @@ _webapp_runner() {
 }
 
 echo "---"
-
-if is_webapp_runner $BUILD_DIR; then
-  echo "  web: web: cd build ; java \$JAVA_OPTS -jar $(_webapp_runner ${BUILD_DIR}/build) --expand-war --port \$PORT libs/*.war"
-else
-  echo "  web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar build/libs/*.jar"
+if [ ! -f $BUILD_DIR/Procfile ]; then
+    default_process_types:
+      web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar build/libs/*.jar
+    EOF
 fi
+
