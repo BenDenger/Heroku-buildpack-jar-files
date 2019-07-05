@@ -2,4 +2,5 @@
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
 echo "installing java JDK "
+source $LIB_DIR/common.sh
 install_jdk "${BUILD_DIR}" "${CACHE_DIR}"
