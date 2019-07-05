@@ -28,7 +28,7 @@ _webapp_runner() {
 echo "---"
 if [ ! -f $BUILD_DIR/Procfile ]; then
     default_process_types:
-      web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar build/libs/*.jar
+      web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar *.jar
     EOF
 fi
 
