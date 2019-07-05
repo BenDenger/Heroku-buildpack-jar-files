@@ -1,40 +1,8 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
 
-echo "entering release"
-BP_DIR=$(cd $(dirname $0)/..; pwd)
-. $BP_DIR/lib/common.sh
-
-BUILD_DIR=$1
-
-_ratpack_proc() {
-  echo "entering ratpack proc"
-  local ctxDir=$1
-  if [ -d $ctxDir/build/install/*/bin ]; then
-    (cd $ctxDir; find build/install/*/bin -type f -executable | grep -v "\.bat$")
-  else
-    echo -n ""
-  fi
-}
-
-_ratpack_proc_count() {
-  echo "entering ratpack proc count"
-  local ctxDir=$1
-  _ratpack_proc $ctxDir | wc -l
-}
-
-_webapp_runner() {
-  echo "entering _webapp_runner"
-  local ctxDir=$1
-  (cd $ctxDir; find . -type f -name webapp-runner-*.jar)
-}
-
-echo "---"
-if [ ! -f $BUILD_DIR/Procfile ]; then
-    echo "no procfile"
-    default_process_types:
-      web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar /TestApp-0.0.1-SNAPSHOT.jar
-    EOF
-else
-    echo "procfile found"
-
+cat <<EOF
+---
+default_process_types:
+  web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar TestApp-0.0.1-SNAPSHOT.jar
+EOF
