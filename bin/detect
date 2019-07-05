@@ -2,5 +2,5 @@
 # bin/detect <build-dir>
 
 if [ -f $1/*.jar ]; then
-  echo "Jar File found" && exit 0
+  echo "Jar File" && exit 0
 fi

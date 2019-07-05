@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7afccb3-5ab4-4c33-94e0-7172bd8238b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/bin/detect" beforeDir="false" afterPath="$PROJECT_DIR$/bin/detect" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/release" beforeDir="false" afterPath="$PROJECT_DIR$/bin/release" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/release">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="96" selection-start-line="28" selection-start-column="96" selection-end-line="28" selection-end-column="96" />
+            <state relative-caret-position="585">
+              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -119,9 +120,9 @@
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/etc/publish.sh" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/bin/detect" />
         <option value="$PROJECT_DIR$/buildpack.toml" />
         <option value="$PROJECT_DIR$/bin/compile" />
+        <option value="$PROJECT_DIR$/bin/detect" />
         <option value="$PROJECT_DIR$/bin/release" />
       </list>
     </option>
@@ -384,8 +385,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/release">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="96" selection-start-line="28" selection-start-column="96" selection-end-line="28" selection-end-column="96" />
+        <state relative-caret-position="585">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
         </state>
       </provider>
     </entry>
