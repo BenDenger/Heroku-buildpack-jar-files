@@ -27,11 +27,11 @@ _webapp_runner() {
 
 echo "---"
 if [ ! -f $BUILD_DIR/Procfile ]; then
-      echo "  web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar build/libs/*.jar"
-  if is_ratpack $BUILD_DIR && [ $(_ratpack_proc_count $BUILD_DIR) -eq 1 ]; then
+echo "proc"
     echo "default_process_types:"
-    echo "  web: $(_ratpack_proc $BUILD_DIR)"
-  else
-    echo "{}"
-  fi
+    if is_webapp_runner $BUILD_DIR; then
+      echo "  web: web: cd build ; java \$JAVA_OPTS -jar $(_webapp_runner ${BUILD_DIR}/build) --expand-war --port \$PORT libs/*.war"
+    else
+      echo "  web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar build/libs/*.jar"
+    fi
 fi
