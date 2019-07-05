@@ -5,3 +5,4 @@ if [ -f $1/*.jar ]; then
   echo "Jar File" && exit 0
 else
     echo "not found thiasdj"
+fi
