@@ -25,5 +25,10 @@ _webapp_runner() {
   (cd $ctxDir; find . -type f -name webapp-runner-*.jar)
 }
 
-echo "---this "
-echo "  web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar build/libs/*.jar"
+echo "---"
+
+if is_webapp_runner $BUILD_DIR; then
+  echo "  web: web: cd build ; java \$JAVA_OPTS -jar $(_webapp_runner ${BUILD_DIR}/build) --expand-war --port \$PORT libs/*.war"
+else
+  echo "  web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar build/libs/*.jar"
+fi
