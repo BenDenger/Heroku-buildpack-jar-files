@@ -27,7 +27,7 @@ _webapp_runner() {
 
 echo "---"
 if [ ! -f $BUILD_DIR/Procfile ]; then
-echo "proc"
+    echo "proc"
     echo "default_process_types:"
     if is_webapp_runner $BUILD_DIR; then
       echo "  web: web: cd build ; java \$JAVA_OPTS -jar $(_webapp_runner ${BUILD_DIR}/build) --expand-war --port \$PORT libs/*.war"
