@@ -98,4 +98,4 @@ install_jdk() {
 
 
   install_java_with_overlay "${install_dir}" "${cache_dir}"
-
+}

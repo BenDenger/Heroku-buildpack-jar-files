@@ -59,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/common.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="570">
+              <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -213,6 +213,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-837" width="1920" height="1177" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -367,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/common.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="570">
+          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
         </state>
       </provider>
     </entry>
