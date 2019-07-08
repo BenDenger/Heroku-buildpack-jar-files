@@ -2,6 +2,7 @@
 # bin/detect <build-dir>
 
 echo $1
+cd lib/
 ls -al
 if [ -f $1/*.jar ]; then
   echo "Jar File" && exit 0
