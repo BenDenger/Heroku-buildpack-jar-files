@@ -4,5 +4,5 @@
 cat <<EOF
 ---
 default_process_types:
-  web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar TestApp-0.0.1-SNAPSHOT.jar
+  web: java -Dserver.port=\$PORT \$JAVA_OPTS -jar *.jar
 EOF
